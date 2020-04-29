@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Route, Link } from "react-router-dom";
 import SavedList from "./Movies/SavedList";
 import MovieList from "./Movies/MovieList";
+import MovieUpdate from "./Movies/MovieUpdate";
 import AddMovie from "./Movies/AddMovie";
 import Movie from "./Movies/Movie";
-import axios from 'axios';
+import axios from "axios";
 
 const App = (props) => {
   const [savedList, setSavedList] = useState([]);
@@ -13,11 +14,11 @@ const App = (props) => {
   const getMovieList = () => {
     axios
       .get("http://localhost:5000/api/movies")
-      .then(res => setMovieList(res.data))
-      .catch(err => console.log(err.response));
+      .then((res) => setMovieList(res.data))
+      .catch((err) => console.log(err.response));
   };
 
-  const addToSavedList = movie => {
+  const addToSavedList = (movie) => {
     setSavedList([...savedList, movie]);
   };
 
@@ -44,8 +45,6 @@ const App = (props) => {
           movieList={movieList}
         />
       </Route>
-<<<<<<< Updated upstream
-=======
       <Route
         path="/movies/:id"
         render={(props) => {
@@ -70,7 +69,6 @@ const App = (props) => {
           />
         )}
       />
->>>>>>> Stashed changes
     </>
   );
 };

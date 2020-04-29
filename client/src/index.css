@@ -66,9 +66,7 @@ body {
   color: white;
 }
 
-<<<<<<< Updated upstream
-=======
-.edit-button {
+<<<<<<< Updated upstream ======= .edit-button {
   position: absolute;
   top: 100px;
   right: 25px;
@@ -94,8 +92,7 @@ body {
   color: white;
 }
 
->>>>>>> Stashed changes
-.home-button {
+>>>>>>>Stashed changes .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
 }
@@ -104,8 +101,6 @@ body {
   color: red;
   text-align: center;
 }
-<<<<<<< Updated upstream
-=======
 
 .movie-update {
   display: flex;
@@ -150,4 +145,3 @@ input:invalid {
 textarea:invalid {
   border: 2px solid red;
 }
->>>>>>> Stashed changes
