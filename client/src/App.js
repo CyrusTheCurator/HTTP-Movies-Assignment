@@ -6,6 +6,7 @@ import MovieUpdate from "./Movies/MovieUpdate";
 import AddMovie from "./Movies/AddMovie";
 import Movie from "./Movies/Movie";
 import axios from "axios";
+import { Button } from "reactstrap";
 
 const App = (props) => {
   const [savedList, setSavedList] = useState([]);
@@ -34,7 +35,9 @@ const App = (props) => {
         <div className="addMovieContainer">
           {" "}
           <h2>Add your own movie -</h2>{" "}
-          <Link to="/add-movie">Add New Movie</Link>
+          <Link to="/add-movie">
+            <Button>Add New Movie</Button>
+          </Link>
         </div>
         <MovieList movies={movieList} />
       </Route>

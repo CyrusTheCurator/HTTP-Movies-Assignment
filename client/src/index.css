@@ -66,13 +66,15 @@ body {
   color: white;
 }
 
-<<<<<<< Updated upstream ======= .edit-button {
+.edit-button {
   position: absolute;
   top: 100px;
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
   background-color: lightseagreen;
+  color: green;
+  font-weight: 600;
 }
 .edit-button:hover {
   background-color: green;
@@ -86,13 +88,15 @@ body {
   border: 1px solid grey;
   padding: 5px 10px;
   background-color: lightseagreen;
+  color: red;
+  font-weight: 900;
 }
 .remove-button:hover {
   background-color: green;
   color: white;
 }
 
->>>>>>>Stashed changes .home-button {
+.home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
 }

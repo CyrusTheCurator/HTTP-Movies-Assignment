@@ -46,6 +46,7 @@ function AddMovie(props) {
       <form
         className="movie-update"
         onSubmit={(e) => {
+          e.preventDefault();
           addMovie(movie);
         }}
       >
