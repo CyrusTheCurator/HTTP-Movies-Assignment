@@ -18,7 +18,6 @@ function AddMovie(props) {
       .post(`http://localhost:5000/api/movies`, movie)
       .then((res) => {
         console.log(res);
-
         //updates app state
         setAddStatus("success");
         props.setMovieList(res.data);
